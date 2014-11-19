@@ -381,6 +381,23 @@ bluetoothle.connect(connectSuccess, connectError, params);
 }
 ```
 
+##### Error #####
+```javascript
+{
+  "error": "connect",
+  "message": "Device previously connected, reconnect or close for new device"
+}
+
+{
+  "error": "connect",
+  "message": "No device address"
+}
+
+{
+  "error": "connect",
+  "message": "Device not found"
+}
+```
 
 
 ### reconnect ###
@@ -421,6 +438,30 @@ bluetoothle.reconnect(reconnectSuccess, reconnectError);
   "name": "Polar H7 3B321015",
   "address": "ECC037FD-72AE-AFC5-9213-CA785B3B5C63",
   "status": "disconnected"
+}
+```
+
+
+##### Error #####
+```javascript
+{
+  "error": "reconnect",
+  "message": "Reconnection to device failed"
+}
+
+{
+  "error": "initialize",
+  "message": "Bluetooth not initialized"
+}
+
+{
+  "error": "neverConnected",
+  "message": "Never connected to device"
+}
+
+{
+  "error": "isNotDisconnected",
+  "message": "Device isn't disconnected"
 }
 ```
 
